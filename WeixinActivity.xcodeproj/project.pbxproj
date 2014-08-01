@@ -34,6 +34,7 @@
 		647DC9BF184F023A00DCCA21 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 647DC9BD184F023A00DCCA21 /* README.md */; };
 		647DC9C21850188700DCCA21 /* ios6.png in Resources */ = {isa = PBXBuildFile; fileRef = 647DC9C01850188700DCCA21 /* ios6.png */; };
 		647DC9C31850188700DCCA21 /* ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 647DC9C11850188700DCCA21 /* ios7.png */; };
+		6DEB02EB198B9633004487BE /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEB02E8198B9633004487BE /* libWeChatSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,9 @@
 		647DC9BD184F023A00DCCA21 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		647DC9C01850188700DCCA21 /* ios6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ios6.png; sourceTree = "<group>"; };
 		647DC9C11850188700DCCA21 /* ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ios7.png; sourceTree = "<group>"; };
+		6DEB02E8198B9633004487BE /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		6DEB02E9198B9633004487BE /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		6DEB02EA198B9633004487BE /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 			files = (
 				641A3B73184C95CC00869773 /* CoreGraphics.framework in Frameworks */,
 				641A3B75184C95CC00869773 /* UIKit.framework in Frameworks */,
+				6DEB02EB198B9633004487BE /* libWeChatSDK.a in Frameworks */,
 				641A3B71184C95CC00869773 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,6 +210,9 @@
 		641A3BCC184C9A4F00869773 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6DEB02E8198B9633004487BE /* libWeChatSDK.a */,
+				6DEB02E9198B9633004487BE /* WXApi.h */,
+				6DEB02EA198B9633004487BE /* WXApiObject.h */,
 				641A3BF0184D5AD900869773 /* icon_session.png */,
 				641A3BF1184D5AD900869773 /* icon_timeline.png */,
 				641A3BF2184D5AD900869773 /* icon_timeline@2x.png */,
