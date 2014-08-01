@@ -16,6 +16,8 @@
     enum WXScene scene;
 }
 
+@property (nonatomic, copy) NSString *descriptionString;
+
 - (void)setThumbImage:(SendMessageToWXReq *)req;
 
 @end

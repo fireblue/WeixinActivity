@@ -10,10 +10,6 @@
 
 @implementation WeixinActivityBase
 
-+ (UIActivityCategory)activityCategory
-{
-    return UIActivityCategoryShare;
-}
 
 - (NSString *)activityType
 {
@@ -70,8 +66,8 @@
 //    req.bText = NO;
     req.message = WXMediaMessage.message;
     if (scene == WXSceneSession) {
-        req.message.title = [NSString stringWithFormat:NSLocalizedString(@"%@ Share",nil), NSLocalizedStringFromTable(@"CFBundleDisplayName", @"InfoPlist", nil)];
-        req.message.description = title;
+        req.message.title = title;
+        req.message.description = self.descriptionString;
     } else {
         req.message.title = title;
     }
