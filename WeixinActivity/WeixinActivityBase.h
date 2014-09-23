@@ -17,6 +17,8 @@
 }
 
 @property (nonatomic, copy) NSString *descriptionString;
+@property (nonatomic, strong) UIImage *descriptionImage;
+@property (nonatomic, copy) NSString *titleString;
 
 - (void)setThumbImage:(SendMessageToWXReq *)req;
 

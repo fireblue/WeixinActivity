@@ -20,10 +20,10 @@
 {
     if ([WXApi isWXAppInstalled] && [WXApi isWXAppSupportApi]) {
         for (id activityItem in activityItems) {
-            if ([activityItem isKindOfClass:[UIImage class]]) {
+            if (self.descriptionImage) {
                 return YES;
             }
-            if ([activityItem isKindOfClass:[NSURL class]]) {
+            if (self.titleString) {
                 return YES;
             }
         }
@@ -33,15 +33,11 @@
 
 - (void)prepareWithActivityItems:(NSArray *)activityItems
 {
+    image = self.descriptionImage;
+    title = self.titleString;
     for (id activityItem in activityItems) {
-        if ([activityItem isKindOfClass:[UIImage class]]) {
-            image = activityItem;
-        }
         if ([activityItem isKindOfClass:[NSURL class]]) {
             url = activityItem;
-        }
-        if ([activityItem isKindOfClass:[NSString class]]) {
-            title = activityItem;
         }
     }
 }
@@ -63,7 +59,7 @@
 {
     SendMessageToWXReq *req = [[SendMessageToWXReq alloc] init];
     req.scene = scene;
-//    req.bText = NO;
+    //    req.bText = NO;
     req.message = WXMediaMessage.message;
     if (scene == WXSceneSession) {
         req.message.title = title;
