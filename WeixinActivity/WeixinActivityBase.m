@@ -59,7 +59,7 @@
 {
     SendMessageToWXReq *req = [[SendMessageToWXReq alloc] init];
     req.scene = scene;
-    //    req.bText = NO;
+//    req.bText = NO;
     req.message = WXMediaMessage.message;
     if (scene == WXSceneSession) {
         req.message.title = title;
